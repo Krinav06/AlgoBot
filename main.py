@@ -1,6 +1,6 @@
 import warnings
 warnings.filterwarnings('ignore')
-from SmartApi import SmartConnect
+from smartapi import SmartConnect
 from time import sleep
 import pandas as pd
 #import pandas_ta as ta
