@@ -8,7 +8,7 @@ from datetime import datetime, date, timedelta
 from pytz import timezone
 import requests
 import login as l
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 import pyotp
 import sys
 
@@ -433,7 +433,7 @@ def daily_cycle():
 
 if __name__ == '__main__':
 
-  keep_alive()
+  #keep_alive()
   weekly_expiry_list()
   intializeSymbolTokenMap()
   daily_cycle()
