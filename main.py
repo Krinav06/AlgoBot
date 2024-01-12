@@ -255,8 +255,8 @@ def symbolScan(s,l):
   ceStrike = getStrikePrice()[0]
   peStrike = getStrikePrice()[1]
 
-  #print(f'{s} CE Strike = {ceStrike}')
-  #print(f'{s} PE Strike = {peStrike}')
+  print(f'{s} CE Strike = {ceStrike}')
+  print(f'{s} PE Strike = {peStrike}')
 
   idx_token = getTokenInfo_IDX(s).iloc[0]['token']
   idx_ltpInfo = obj.ltpData('NSE',s,idx_token)
@@ -278,8 +278,8 @@ def symbolScan(s,l):
   idx_2DHH = max(idx_hist_data.iloc[-2].H, idx_hist_data.iloc[-3].H) * (1 + 0.0015)
   idx_2DLL = min(idx_hist_data.iloc[-2].L, idx_hist_data.iloc[-3].L) * (1 - 0.0015)
 
-  #print(f'{s} IDX 2DHH = {idx_2DHH}')
-  #print(f'{s} IDX 2DLL = {idx_2DLL}')
+  print(f'{s} IDX 2DHH = {idx_2DHH}')
+  print(f'{s} IDX 2DLL = {idx_2DLL}')
 
   OrderBook = obj.orderBook()['data']
   #print(OrderBook)
