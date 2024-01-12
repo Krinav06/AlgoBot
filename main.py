@@ -404,7 +404,7 @@ def daily_cycle():
     endTime = datetime.now(timezone('Asia/Kolkata')).replace(hour=15, minute=0, second=0)
     currentTime = datetime.now(timezone('Asia/Kolkata'))
 
-    while currentTime > startTime and currentTime < endTime:
+    while currentTime > startTime and currentTime > endTime:
       try:
 
         login()
